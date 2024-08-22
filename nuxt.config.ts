@@ -40,4 +40,5 @@ export default defineNuxtConfig({
       ]
     }
   },
+  plugins: ['~/plugins/sequelize.js']
 })
