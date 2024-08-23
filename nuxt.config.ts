@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+  modules: [
+    '@nuxt/ui',
+    '@nuxtjs/supabase'
+  ],
   devtools: { enabled: true },
   css: [
     '@/assets/scss/main.scss',
@@ -40,5 +44,5 @@ export default defineNuxtConfig({
       ]
     }
   },
-  plugins: ['~/plugins/sequelize.js']
+  // plugins: ['~/plugins/sequelize.js']
 })
